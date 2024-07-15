@@ -1,10 +1,10 @@
-import UseEffectExample1 from "./components/UseEffectExample1";
+import Weather from "./components/Weather";
 // import "./styles/App.css";
 
 const App = () => {
   return (
     <div className="App">
-      <UseEffectExample1 />
+      <Weather />
     </div>
   );
 };
