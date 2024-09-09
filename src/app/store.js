@@ -1,12 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit";
-import productsReducer from "./slices/productSlice";
-import filtersReducer from "./slices/filtersSlics";
+import { configureStore } from '@reduxjs/toolkit';
+import exercisesReducer from '../features/exercises/exercisesSlice';
+import authReducer from '../features/auth/authSlice';
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
-    products: productsReducer,
-    filters: filtersReducer,
+    exercises: exercisesReducer,
+    auth: authReducer,
   },
 });
-
-export default store;
