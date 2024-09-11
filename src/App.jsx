@@ -3,8 +3,8 @@ import useTimerV1 from "./hooks/useTimerV1";
 import useTimerV2 from "./hooks/useTimerV2";
 
 function App() {
-  const { formattedTime, start, stop, reset } = useTimerV2(0, true);
   const time = useTimerV1();
+  const { formattedTime, start, stop, reset } = useTimerV2(0, true);
 
   return (
     <div className="min-h-screen bg-gray-100">
